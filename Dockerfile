@@ -44,5 +44,6 @@ COPY nginx/nginx.conf /etc/nginx/nginx.conf
 RUN mkdir -p /run/nginx
 
 EXPOSE 80
+EXPOSE 443
 
 CMD php-fpm7 && nginx -g 'daemon off;'
